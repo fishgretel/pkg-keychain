@@ -6,7 +6,7 @@ function init --on-event init_keychain
     echo "🔑  Please install 'keychain' first: brew install keychain"
   else
     if status --is-interactive
-      keychain --eval --quiet -Q id_rsa | source
+      keychain --eval --quiet -Q | source
     end
   end
 end
